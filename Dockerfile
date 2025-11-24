@@ -25,7 +25,7 @@ RUN rm -rf /usr/local/tomcat/webapps/*
 COPY --from=build /app/target/*.war /usr/local/tomcat/webapps/ROOT.war
 
 # Expose Tomcat's port
-EXPOSE 8081
+EXPOSE 8080
 
 # Start Tomcat when the container runs
 CMD ["catalina.sh", "run"]

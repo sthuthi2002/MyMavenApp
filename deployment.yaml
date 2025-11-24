@@ -18,4 +18,4 @@ spec:
       - name: labmaven
         image: sthuthi22/mavenapp:v1
         ports:
-        - containerPort: 8081
+        - containerPort: 8080
