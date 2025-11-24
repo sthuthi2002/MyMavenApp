@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mavenapp
+  labels:
+    app: mavenapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mavenapp
+  template:
+    metadata:
+      labels:
+        app: mavenapp
+    spec:
+      containers:
+      - name: labmaven
+        image: sthuthi22/mymaven
+        ports:
+        - containerPort: 8081
